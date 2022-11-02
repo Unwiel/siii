@@ -1124,8 +1124,8 @@ class PlayState extends MusicBeatState
 		
 		if (SONG.song == 'Banishment')
 		{
-		    camHUD.setFilters([new ShaderFilter(vcrDistortion.VCRDistortionEffect)]); 
-		    camGame.setFilters([new ShaderFilter(vcrDistortion.VCRDistortionEffect)]); 
+		    camHUD.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
+		    camGame.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
 		} 
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
