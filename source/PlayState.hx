@@ -285,7 +285,7 @@ class PlayState extends MusicBeatState
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
 	
-	var vcrDistortion:Shader = new VCRDistortionEffect();
+	var vcrDistortion:VCRDistortionEffect = new VCRDistortionEffect();
 
 
 
@@ -1124,8 +1124,8 @@ class PlayState extends MusicBeatState
 		
 		if (SONG.song == 'Banishment')
 		{
-		    camHUD.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
-		    camGame.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
+		    camHUD.setFilters([new ShaderFilter(vcrDistortion.VCRDistortionEffect)]); 
+		    camGame.setFilters([new ShaderFilter(vcrDistortion.VCRDistortionEffect)]); 
 		} 
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
