@@ -3894,7 +3894,7 @@ class PlayState extends MusicBeatState
 
 	function goodNoteHit(note:Note):Void
 	{
-	     chromaticDance(1.5);
+	     chromaticDance(1);
 	
 		if (!note.wasGoodHit)
 		{
