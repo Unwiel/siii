@@ -4414,14 +4414,11 @@ class PlayState extends MusicBeatState
 
 			}
 
-			if (chromeOffset - chromeEffect <= 0) 
+			if (chromeOffset < 0) 
 			{
 				chromeOffset = 0;
-			} else 
-			{
-				chromeOffset -= chromeEffect;
-			}
-
+			} 
+			
 			Shader.setChrome(chromeOffset);
 			chromDanced = !chromDanced;
 
