@@ -8,7 +8,7 @@ import openfl.Lib;
 import flixel.math.FlxPoint;
 
 
-class ChromaticAberrationEffect extends Effect
+class ChromaticAberration
 {
 	public var shader:ChromaticAberrationShader;
 
