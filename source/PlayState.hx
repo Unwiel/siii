@@ -56,7 +56,7 @@ import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
 import openfl.filters.ShaderFilter;
-//import Shader;
+import Shader;
 #if sys
 import sys.FileSystem;
 #end
@@ -259,7 +259,7 @@ class PlayState extends MusicBeatState
 	public var chromeTimer:FlxTimer;
 	public var chromDanced:Bool = false;
 
-	public var shader:ChromaticAberration;
+	//public var shader:ChromaticAberration;
 
 	public var chromeOffset:Float = 0;
 	public var chromeEffect:Float = 0;
@@ -4424,12 +4424,12 @@ class PlayState extends MusicBeatState
 				chromeOffset -= chromeEffect;
 			}
 
-			ShadersHandler.setChrome(chromeOffset);
+			Shader.setChrome(chromeOffset);
 			chromDanced = !chromDanced;
 
-			camGame.setFilters([ShadersHandler.chromaticAberration]);
-			camHUD.setFilters([ShadersHandler.chromaticAberration]);
-			camOther.setFilters([ShadersHandler.chromaticAberration]);
+			camGame.setFilters([Shader.ChromaticAberration]);
+			camHUD.setFilters([Shader.ChromaticAberration]);
+			camOther.setFilters([Shader.ChromaticAberration]);
 		}
 	}
 
