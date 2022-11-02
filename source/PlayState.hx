@@ -56,7 +56,7 @@ import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
 import openfl.filters.ShaderFilter;
-import Shaders;
+//import Shader;
 #if sys
 import sys.FileSystem;
 #end
