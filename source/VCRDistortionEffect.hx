@@ -15,7 +15,7 @@ class VCRDistortionEffect
     shader.iTime.value = [0];
     shader.noise.value = [true];
     //var noise:String = Assets.getBitmapData(Paths.image("noise2"));
-    shader.iChannel.input = Assets.getBitmapData(Paths.image("noise2"));
+    shader.iChannel.input = Assets.getBitmapData('assets/images/noise2.png');
   }
 
   public function update(elapsed:Float){
