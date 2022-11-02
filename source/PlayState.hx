@@ -259,10 +259,11 @@ class PlayState extends MusicBeatState
 	public var chromeTimer:FlxTimer;
 	public var chromDanced:Bool = false;
 
-	//public var shader:ChromaticAberration;
+	public var shader:ChromaticAberration;
 
 	public var chromeOffset:Float = 0;
 	public var chromeEffect:Float = 0;
+	public var chromeExtra:Float = 1;
 
 	public var hasChroma:Bool = false;
 
