@@ -4428,9 +4428,9 @@ class PlayState extends MusicBeatState
 			Shader.setChrome(chromeOffset);
 			chromDanced = !chromDanced;
 
-			camGame.setFilters([Shader.ChromaticAberration]);
-			camHUD.setFilters([Shader.ChromaticAberration]);
-			camOther.setFilters([Shader.ChromaticAberration]);
+			camGame.setFilters([Shader.chromaticAberration]);
+			camHUD.setFilters([Shader.chromaticAberration]);
+			camOther.setFilters([Shader.chromaticAberration]);
 		}
 	}
 
