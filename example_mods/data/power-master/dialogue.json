@@ -1,0 +1,53 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Nggghhhhhrr",
+			"boxState": "angry",
+			"portrait": "SawA",
+			"speed": 0.05
+		},
+		{
+			"expression": "shocked",
+			"text": "beeeeep?!?!",
+			"boxState": "angry",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "Shut shorty fucker!!",
+			"boxState": "angry",
+			"portrait": "SawA",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "You fucking blue haired bastard !!!",
+			"boxState": "Angry",
+			"portrait": "SawA",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "How I hate you!",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "SawA"
+		},
+		{
+			"expression": "talk",
+			"text": "This was the last straw, I will destroy you!",
+			"boxState": "angry",
+			"portrait": "SawA",
+			"speed": 0.05
+		},
+		{
+			"expression": "shocked",
+			"text": "...",
+			"boxState": "angry",
+			"portrait": "bf",
+			"speed": 0.05
+		}
+	]
+}

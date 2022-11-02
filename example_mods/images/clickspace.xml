@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="clickspace.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="space0000" x="0" y="0" width="332" height="255" frameX="-63" frameY="0" frameWidth="463" frameHeight="259"/>
+	<SubTexture name="space0001" x="332" y="0" width="444" height="259" frameX="-7" frameY="0" frameWidth="463" frameHeight="259"/>
+	<SubTexture name="space0002" x="0" y="259" width="463" height="259"/>
+</TextureAtlas>

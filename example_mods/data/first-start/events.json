@@ -1,0 +1,94 @@
+{
+	"song": {
+		"speed": 2.8,
+		"stage": "MallStage",
+		"player1": "bf",
+		"player2": "saw",
+		"player3": null,
+		"events": [
+			[
+				57970.5882352941,
+				[
+					[
+						"Toggle Trail",
+						"",
+						""
+					]
+				]
+			],
+			[
+				59117.6470588235,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						""
+					],
+					[
+						"Blammed Lights",
+						"4",
+						""
+					]
+				]
+			],
+			[
+				64676.4705882352,
+				[
+					[
+						"Blammed Lights",
+						"0",
+						""
+					],
+					[
+						"Toggle Trail",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				64764.7058823529,
+				[
+					[
+						"Toggle Trail",
+						"",
+						"1"
+					],
+					[
+						"",
+						"",
+						"1"
+					],
+					[
+						"Blammed Lights",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				70323.5294117646,
+				[
+					[
+						"Blammed Lights",
+						"0",
+						""
+					],
+					[
+						"Toggle Trail",
+						"",
+						"0"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 170,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "first-start"
+	}
+}

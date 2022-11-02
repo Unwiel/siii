@@ -1,0 +1,20 @@
+{
+	"songs": [
+		["Monocode", "saw", [255,13,73]]
+	],
+	"difficulties": "canon",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "SawCovers",
+	"weekBefore": "tutorial",
+	"weekName": "Covers",
+	"startUnlocked": true,
+
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}

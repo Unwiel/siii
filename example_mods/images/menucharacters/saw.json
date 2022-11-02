@@ -1,0 +1,10 @@
+{
+	"idle_anim": "YellowShit",
+	"image": "SawDanceCool",
+	"position": [
+		80,
+		84
+	],
+	"scale": 0.65,
+	"confirm_anim": "M Dad Idle"
+}

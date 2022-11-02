@@ -1,0 +1,74 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Hm?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "Saw"
+		},
+		{
+			"expression": "talk",
+			"text": "Beep bop?!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Oh no kid, you got it wrong, there is no Garcello here.",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "Saw"
+		},
+		{
+			"expression": "talk",
+			"text": "Bep do boop?",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05
+		},
+		{
+			"expression": "talk",
+			"text": "My name is Saw.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "Saw"
+		},
+		{
+			"expression": "talk",
+			"text": "Bop pee bo boop duh!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Rap battle, hm, never tried it before, but I agree!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "Saw"
+		},
+		{
+			"expression": "talk",
+			"text": "duh da bop!",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf"
+		},
+		{
+			"expression": "excited",
+			"text": "Come on baby, let's do it!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.03
+		}
+	]
+}

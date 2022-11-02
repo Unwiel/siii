@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Stick_Saw_Assets.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DOWNstick0000" x="0" y="0" width="419" height="474" frameX="0" frameY="-9" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0001" x="424" y="0" width="399" height="480" frameX="-8" frameY="-3" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0002" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0003" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0004" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0005" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0006" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0007" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0008" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="DOWNstick0009" x="828" y="0" width="380" height="483" frameX="-17" frameY="0" frameWidth="419" frameHeight="483"/>
+	<SubTexture name="IDLEstick0000" x="1213" y="0" width="282" height="493" frameX="0" frameY="-12" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0001" x="1500" y="0" width="256" height="502" frameX="-22" frameY="-4" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0002" x="1761" y="0" width="234" height="504" frameX="-37" frameY="-2" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0003" x="0" y="509" width="219" height="505" frameX="-49" frameY="-1" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0004" x="224" y="509" width="220" height="506" frameX="-51" frameY="0" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0005" x="224" y="509" width="220" height="506" frameX="-51" frameY="0" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0006" x="224" y="509" width="220" height="506" frameX="-51" frameY="0" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0007" x="224" y="509" width="220" height="506" frameX="-51" frameY="0" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="IDLEstick0008" x="224" y="509" width="220" height="506" frameX="-51" frameY="0" frameWidth="282" frameHeight="506"/>
+	<SubTexture name="LEFTstick0000" x="449" y="509" width="361" height="506" frameX="0" frameY="-1" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0001" x="815" y="509" width="326" height="507" frameX="-33" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0002" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0003" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0004" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0005" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0006" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0007" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0008" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="LEFTstick0009" x="1146" y="509" width="301" height="507" frameX="-57" frameY="0" frameWidth="361" frameHeight="507"/>
+	<SubTexture name="RIGHTstick0000" x="1452" y="509" width="352" height="489" frameX="-56" frameY="0" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0001" x="0" y="1021" width="389" height="489" frameX="-16" frameY="0" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0002" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0003" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0004" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0005" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0006" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0007" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0008" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="RIGHTstick0009" x="394" y="1021" width="402" height="487" frameX="0" frameY="-2" frameWidth="408" frameHeight="489"/>
+	<SubTexture name="UPstick0000" x="801" y="1021" width="315" height="530" frameX="-12" frameY="0" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0001" x="1121" y="1021" width="327" height="519" frameX="-4" frameY="-11" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0002" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0003" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0004" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0005" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0006" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0007" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0008" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+	<SubTexture name="UPstick0009" x="1453" y="1021" width="333" height="503" frameX="0" frameY="-27" frameWidth="333" frameHeight="530"/>
+</TextureAtlas>

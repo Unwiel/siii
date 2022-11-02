@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sam.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="lmao0000" x="0" y="0" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0001" x="0" y="0" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0002" x="0" y="600" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0003" x="0" y="600" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0004" x="0" y="1200" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0005" x="0" y="1200" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0006" x="1000" y="0" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0007" x="1000" y="0" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0008" x="1000" y="600" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0009" x="1000" y="600" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0010" x="1000" y="1200" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+	<SubTexture name="lmao0011" x="1000" y="1200" width="1000" height="600" frameX="0" frameY="0" frameWidth="1000" frameHeight="600"/>
+</TextureAtlas>

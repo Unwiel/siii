@@ -1,0 +1,144 @@
+{
+	"song": {
+		"speed": 2.5,
+		"stage": "MallStage",
+		"player1": "bf",
+		"player2": "saw",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Blammed Lights",
+						"1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"0.2",
+						""
+					]
+				]
+			],
+			[
+				2735.29411764706,
+				[
+					[
+						"Blammed Lights",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				5558.82352941176,
+				[
+					[
+						"Blammed Lights",
+						"3",
+						""
+					]
+				]
+			],
+			[
+				8382.35294117647,
+				[
+					[
+						"Blammed Lights",
+						"4",
+						""
+					]
+				]
+			],
+			[
+				11205.8823529412,
+				[
+					[
+						"Blammed Lights",
+						"5",
+						""
+					]
+				]
+			],
+			[
+				14029.4117647059,
+				[
+					[
+						"Blammed Lights",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				16852.9411764706,
+				[
+					[
+						"Blammed Lights",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				42352.9411764706,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				59294.1176470588,
+				[
+					[
+						"Toggle Trail",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				71999.9999999999,
+				[
+					[
+						"Toggle Trail",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				73323.5294117646,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						"1"
+					]
+				]
+			],
+			[
+				84705.8823529411,
+				[
+					[
+						"Toggle Trail",
+						"0",
+						"0"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 170,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Uncertain"
+	}
+}

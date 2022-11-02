@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Saw Idle"
+		},
+		{
+			"offsets": [
+				114,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Saw Left"
+		},
+		{
+			"offsets": [
+				-12,
+				-14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Saw Down"
+		},
+		{
+			"offsets": [
+				0,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Saw Up"
+		},
+		{
+			"offsets": [
+				-25,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Saw Right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "cool",
+			"indices": [],
+			"name": "Saw Cool"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/MAJigsaw_Assets_Real",
+	"position": [
+		20,
+		140
+	],
+	"healthicon": "humansaw",
+	"flip_x": false,
+	"healthbar_colors": [
+		153,
+		153,
+		153
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

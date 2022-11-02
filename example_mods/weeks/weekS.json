@@ -1,0 +1,49 @@
+{
+	"storyName": "VS Saw (The Mod)",
+	"difficulties": "canon",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"saw",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"First-Start",
+			"saw",
+			[
+				175,
+				200,
+				80
+			]
+		],
+		[
+			"Uncertain",
+			"saw",
+			[
+				255,
+				115,
+				0
+			]
+		],
+		[
+			"Power-Master",
+			"madsaw",
+			[
+				150,
+				32,
+				53
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "VS Saw (The Mod)"
+}

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SawASSETS.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SawDown0000" x="0" y="0" width="304" height="533" frameX="-11" frameY="-16" frameWidth="321" frameHeight="549"/>
+	<SubTexture name="SawDown0001" x="0" y="0" width="304" height="533" frameX="-11" frameY="-16" frameWidth="321" frameHeight="549"/>
+	<SubTexture name="SawDown0002" x="309" y="0" width="312" height="540" frameX="-6" frameY="-9" frameWidth="321" frameHeight="549"/>
+	<SubTexture name="SawDown0003" x="309" y="0" width="312" height="540" frameX="-6" frameY="-9" frameWidth="321" frameHeight="549"/>
+	<SubTexture name="SawDown0004" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0005" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0006" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0007" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0008" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0009" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0010" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0011" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0012" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawDown0013" x="626" y="0" width="321" height="549"/>
+	<SubTexture name="SawIdle0000" x="952" y="0" width="394" height="522" frameX="0" frameY="-34" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0001" x="952" y="0" width="394" height="522" frameX="0" frameY="-34" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0002" x="1351" y="0" width="390" height="533" frameX="-9" frameY="-23" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0003" x="1351" y="0" width="390" height="533" frameX="-9" frameY="-23" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0004" x="1746" y="0" width="381" height="543" frameX="-21" frameY="-13" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0005" x="1746" y="0" width="381" height="543" frameX="-21" frameY="-13" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0006" x="2132" y="0" width="372" height="554" frameX="-33" frameY="-2" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0007" x="2132" y="0" width="372" height="554" frameX="-33" frameY="-2" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0008" x="2509" y="0" width="367" height="556" frameX="-38" frameY="0" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0009" x="2509" y="0" width="367" height="556" frameX="-38" frameY="0" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0010" x="2509" y="0" width="367" height="556" frameX="-38" frameY="0" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0011" x="2509" y="0" width="367" height="556" frameX="-38" frameY="0" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0012" x="2509" y="0" width="367" height="556" frameX="-38" frameY="0" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawIdle0013" x="2509" y="0" width="367" height="556" frameX="-38" frameY="0" frameWidth="405" frameHeight="556"/>
+	<SubTexture name="SawLeft0000" x="2881" y="0" width="462" height="550" frameX="0" frameY="-6" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0001" x="2881" y="0" width="462" height="550" frameX="0" frameY="-6" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0002" x="3348" y="0" width="451" height="553" frameX="-10" frameY="-3" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0003" x="3348" y="0" width="451" height="553" frameX="-10" frameY="-3" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0004" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0005" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0006" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0007" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0008" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0009" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0010" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0011" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0012" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawLeft0013" x="0" y="561" width="441" height="556" frameX="-21" frameY="0" frameWidth="462" frameHeight="556"/>
+	<SubTexture name="SawRight0000" x="446" y="561" width="474" height="550"/>
+	<SubTexture name="SawRight0001" x="446" y="561" width="474" height="550"/>
+	<SubTexture name="SawRight0002" x="925" y="561" width="461" height="547" frameX="-8" frameY="-3" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0003" x="925" y="561" width="461" height="547" frameX="-8" frameY="-3" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0004" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0005" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0006" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0007" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0008" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0009" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0010" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0011" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0012" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawRight0013" x="1391" y="561" width="442" height="543" frameX="-21" frameY="-7" frameWidth="474" frameHeight="550"/>
+	<SubTexture name="SawUp0000" x="1838" y="561" width="309" height="568" frameX="-12" frameY="0" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0001" x="1838" y="561" width="309" height="568" frameX="-12" frameY="0" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0002" x="2152" y="561" width="324" height="562" frameX="-4" frameY="-7" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0003" x="2152" y="561" width="324" height="562" frameX="-4" frameY="-7" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0004" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0005" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0006" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0007" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0008" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0009" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0010" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0011" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0012" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+	<SubTexture name="SawUp0013" x="2481" y="561" width="331" height="557" frameX="0" frameY="-11" frameWidth="331" frameHeight="569"/>
+</TextureAtlas>

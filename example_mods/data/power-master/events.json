@@ -1,0 +1,114 @@
+{
+	"song": {
+		"speed": 3,
+		"stage": "SawWorldStage",
+		"player1": "bf",
+		"player2": "madsaw",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						"1"
+					],
+					[
+						"Blammed Lights",
+						"4",
+						""
+					]
+				]
+			],
+			[
+				8189.65517241379,
+				[
+					[
+						"Blammed Lights",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				38534.4827586207,
+				[
+					[
+						"Change Scroll Speed",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				55086.2068965517,
+				[
+					[
+						"Change Scroll Speed",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				100603.448275862,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				111724.137931034,
+				[
+					[
+						"Change Scroll Speed",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				122758.620689655,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				128275.862068965,
+				[
+					[
+						"Change Scroll Speed",
+						"1.2",
+						""
+					]
+				]
+			],
+			[
+				144827.586206896,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 174,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Power Master"
+	}
+}
