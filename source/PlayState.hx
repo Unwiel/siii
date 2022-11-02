@@ -3894,6 +3894,8 @@ class PlayState extends MusicBeatState
 
 	function goodNoteHit(note:Note):Void
 	{
+	     chromaticDance(1.5);
+	
 		if (!note.wasGoodHit)
 		{
 			if (ClientPrefs.hitsoundVolume > 0 && !note.hitsoundDisabled)
@@ -3901,7 +3903,7 @@ class PlayState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('hitsound'), ClientPrefs.hitsoundVolume);
 			}
 			
-			chromaticDance(3);
+			
 
 			if(cpuControlled && (note.ignoreNote || note.hitCausesMiss)) return;
 
@@ -4368,6 +4370,8 @@ class PlayState extends MusicBeatState
 
 		setOnLuas('curBeat', curBeat); //DAWGG?????
 		callOnLuas('onBeatHit', []);
+		
+		filters.push(Shader.chromaticAberration);
 	}
 
 	public var closeLuas:Array<FunkinLua> = [];
