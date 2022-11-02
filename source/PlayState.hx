@@ -55,6 +55,8 @@ import Achievements;
 import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
+import openfl.filters.ShaderFilter;
+import Shaders;
 #if sys
 import sys.FileSystem;
 #end
@@ -251,6 +253,18 @@ class PlayState extends MusicBeatState
 	var detailsText:String = "";
 	var detailsPausedText:String = "";
 	#end
+	
+	public var filters:Array<BitmapFilter> = [];
+
+	public var chromeTimer:FlxTimer;
+	public var chromDanced:Bool = false;
+
+	public var shader:ChromaticAberration;
+
+	public var chromeOffset:Float = 0;
+	public var chromeEffect:Float = 0;
+
+	public var hasChroma:Bool = false;
 
 	//Achievement shit
 	var keysPressed:Array<Bool> = [];
@@ -269,6 +283,10 @@ class PlayState extends MusicBeatState
 	
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
+	
+	var vcrDistortion:Shader = new VCRDistortionEffect();
+
+
 
 	override public function create()
 	{
@@ -850,6 +868,8 @@ class PlayState extends MusicBeatState
 			case 'schoolEvil':
 				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
+				
+			
 		}
 
 		var file:String = Paths.json(songName + '/dialogue'); //Checks for json/Psych Engine dialogue
@@ -1100,6 +1120,12 @@ class PlayState extends MusicBeatState
 			}
 		}
 		#end
+		
+		if (SONG.song == 'Banishment')
+		{
+		    camHUD.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
+		    camGame.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
+		} 
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
 		if (isStoryMode && !seenCutscene)
@@ -1354,7 +1380,7 @@ class PlayState extends MusicBeatState
 			bg.cameras = [camHUD];
 			add(bg);
 
-			(new FlxVideo(fileName)).finishCallback = function() {
+			(new VideoHandler(fileName)).finishCallback = function() {
 				remove(bg);
 				startAndEnd();
 			}
@@ -3880,6 +3906,8 @@ class PlayState extends MusicBeatState
 			{
 				FlxG.sound.play(Paths.sound('hitsound'), ClientPrefs.hitsoundVolume);
 			}
+			
+			chromaticDance(3);
 
 			if(cpuControlled && (note.ignoreNote || note.hitCausesMiss)) return;
 
@@ -4365,6 +4393,44 @@ class PlayState extends MusicBeatState
 		}
 		#end
 		return returnVal;
+	}
+	
+	public function chromaticDance(type:Float):Void
+	{
+		
+
+		if (hasChroma)
+		{
+			if (type == 1 || type == 2) 
+			{
+				chromeOffset = 3.5 + chromeExtra;
+				chromeOffset /= 1000;
+			}
+
+			if (type == 2)
+			{
+				chromeOffset *= 1.75;
+
+				
+
+
+			}
+
+			if (chromeOffset - chromeEffect <= 0) 
+			{
+				chromeOffset = 0;
+			} else 
+			{
+				chromeOffset -= chromeEffect;
+			}
+
+			ShadersHandler.setChrome(chromeOffset);
+			chromDanced = !chromDanced;
+
+			camGame.setFilters([ShadersHandler.chromaticAberration]);
+			camHUD.setFilters([ShadersHandler.chromaticAberration]);
+			camOther.setFilters([ShadersHandler.chromaticAberration]);
+		}
 	}
 
 	public function setOnLuas(variable:String, arg:Dynamic) {
