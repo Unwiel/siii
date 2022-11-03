@@ -19,7 +19,7 @@ class VCRDistortionEffect
 		shader.range.value = [0.05];
 		shader.offsetIntensity.value = [0.02];
 		shader.iResolution.value = [Lib.current.stage.stageWidth, Lib.current.stage.stageHeight];
-		//PlayState.instance.shaderUpdates.push(update);
+		PlayState.instance.shaderUpdates.push(update);
 	}
 
 	public function update(elapsed:Float)
