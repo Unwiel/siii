@@ -104,7 +104,6 @@ class PlayState extends MusicBeatState
 	public var DAD_X:Float = 100;
 	public var DAD_Y:Float = 100;
 	public var GF_X:Float = 400;
-	public var shaderUpdates:Array<Float->Void> = [];
 	public var GF_Y:Float = 130;
 
 	public var songSpeedTween:FlxTween;
