@@ -45,7 +45,7 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
                 var option:Option = new Option('Shaders', //Name
-	               'Add your Description here.', //Description
+	               'da shaders ig.', //Description
 	               'shaders', //Save data variable name
 	               'bool', //Variable type
 	               true); //Default value
