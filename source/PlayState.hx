@@ -103,6 +103,7 @@ class PlayState extends MusicBeatState
 	public var DAD_X:Float = 100;
 	public var DAD_Y:Float = 100;
 	public var GF_X:Float = 400;
+	public var shaderUpdates:Array<Float->Void> = [];
 	public var GF_Y:Float = 130;
 
 	public var songSpeedTween:FlxTween;
@@ -3894,7 +3895,7 @@ class PlayState extends MusicBeatState
 
 	function goodNoteHit(note:Note):Void
 	{
-	     chromaticDance(1);
+	     
 	
 		if (!note.wasGoodHit)
 		{
@@ -4414,10 +4415,6 @@ class PlayState extends MusicBeatState
 
 			}
 
-			if (chromeOffset < 0) 
-			{
-				chromeOffset = 0;
-			} 
 			
 			Shader.setChrome(chromeOffset);
 			chromDanced = !chromDanced;
