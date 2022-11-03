@@ -1751,7 +1751,7 @@ class FunkinLua {
 			PlayState.instance.addShaderToCamera(camera, new TiltshiftEffect(blurAmount,center));
 			
 		});
-		Lua_helper.add_callback(lua, "addVHSEffect", function(camera:String,glitchFactor:Float = 0.05, intesidad:Float = 0.02) {
+		Lua_helper.add_callback(lua, "addVHSEffect", function(camera:String,glitchFactor:Float = 0.05, intensidad:Float = 0.02) {
 			
 			PlayState.instance.addShaderToCamera(camera, new VHSEffect(glitchFactor, intensidad));
 			
