@@ -11,6 +11,9 @@ import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxGame;
+import openfl.filters.ShaderFilter;
+import Shaders;
+import openfl.display.Shader;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -55,8 +58,6 @@ import Achievements;
 import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
-import openfl.filters.ShaderFilter;
-import Shader;
 #if sys
 import sys.FileSystem;
 #end
@@ -170,6 +171,11 @@ class PlayState extends MusicBeatState
 	private var updateTime:Bool = true;
 	public static var changedDifficulty:Bool = false;
 	public static var chartingMode:Bool = false;
+	
+	public var shaderUpdates:Array<Float->Void> = [];
+    public var camGameShaders:Array<ShaderEffect> = [];
+    public var camHUDShaders:Array<ShaderEffect> = [];
+    public var camOtherShaders:Array<ShaderEffect> = [];
 
 	//Gameplay settings
 	public var healthGain:Float = 1;
@@ -255,18 +261,7 @@ class PlayState extends MusicBeatState
 	var detailsPausedText:String = "";
 	#end
 	
-	public var filters:Array<BitmapFilter> = [];
 
-	public var chromeTimer:FlxTimer;
-	public var chromDanced:Bool = false;
-
-	public var shader:ChromaticAberration;
-
-	public var chromeOffset:Float = 0;
-	public var chromeEffect:Float = 0;
-	public var chromeExtra:Float = 1;
-
-	public var hasChroma:Bool = false;
 
 	//Achievement shit
 	var keysPressed:Array<Bool> = [];
@@ -286,7 +281,7 @@ class PlayState extends MusicBeatState
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
 	
-	var vcrDistortion:VCRDistortionEffect = new VCRDistortionEffect();
+	
 
 
 
@@ -1123,11 +1118,7 @@ class PlayState extends MusicBeatState
 		}
 		#end
 		
-		if (SONG.song == 'Banishment')
-		{
-		    camHUD.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
-		    camGame.setFilters([new ShaderFilter(vcrDistortion.shader)]); 
-		} 
+		
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
 		if (isStoryMode && !seenCutscene)
@@ -1343,6 +1334,105 @@ class PlayState extends MusicBeatState
 		}
 		#end
 	}
+	
+	public function addShaderToCamera(cam:String,effect:ShaderEffect){//STOLE FROM ANDROMEDA
+	  
+	  
+	  
+		switch(cam.toLowerCase()) {
+			case 'camhud' | 'hud':
+					camHUDShaders.push(effect);
+					var newCamEffects:Array<BitmapFilter>=[]; // IT SHUTS HAXE UP IDK WHY BUT WHATEVER IDK WHY I CANT JUST ARRAY<SHADERFILTER>
+					for(i in camHUDShaders){
+					  newCamEffects.push(new ShaderFilter(i.shader));
+					}
+					camHUD.setFilters(newCamEffects);
+			case 'camother' | 'other':
+					camOtherShaders.push(effect);
+					var newCamEffects:Array<BitmapFilter>=[]; // IT SHUTS HAXE UP IDK WHY BUT WHATEVER IDK WHY I CANT JUST ARRAY<SHADERFILTER>
+					for(i in camOtherShaders){
+					  newCamEffects.push(new ShaderFilter(i.shader));
+					}
+					camOther.setFilters(newCamEffects);
+			case 'camgame' | 'game':
+					camGameShaders.push(effect);
+					var newCamEffects:Array<BitmapFilter>=[]; // IT SHUTS HAXE UP IDK WHY BUT WHATEVER IDK WHY I CANT JUST ARRAY<SHADERFILTER>
+					for(i in camGameShaders){
+					  newCamEffects.push(new ShaderFilter(i.shader));
+					}
+					camGame.setFilters(newCamEffects);
+			default:
+				if(modchartSprites.exists(cam)) {
+					Reflect.setProperty(modchartSprites.get(cam),"shader",effect.shader);
+				} else if(modchartTexts.exists(cam)) {
+					Reflect.setProperty(modchartTexts.get(cam),"shader",effect.shader);
+				} else {
+					var OBJ = Reflect.getProperty(PlayState.instance,cam);
+					Reflect.setProperty(OBJ,"shader", effect.shader);
+				}
+			
+			
+				
+				
+		}
+	  
+	  
+	  
+	  
+  }
+
+  public function removeShaderFromCamera(cam:String,effect:ShaderEffect){
+	  
+	  
+		switch(cam.toLowerCase()) {
+			case 'camhud' | 'hud': 
+    camHUDShaders.remove(effect);
+    var newCamEffects:Array<BitmapFilter>=[];
+    for(i in camHUDShaders){
+      newCamEffects.push(new ShaderFilter(i.shader));
+    }
+    camHUD.setFilters(newCamEffects);
+			case 'camother' | 'other': 
+					camOtherShaders.remove(effect);
+					var newCamEffects:Array<BitmapFilter>=[];
+					for(i in camOtherShaders){
+					  newCamEffects.push(new ShaderFilter(i.shader));
+					}
+					camOther.setFilters(newCamEffects);
+			default: 
+				camGameShaders.remove(effect);
+				var newCamEffects:Array<BitmapFilter>=[];
+				for(i in camGameShaders){
+				  newCamEffects.push(new ShaderFilter(i.shader));
+				}
+				camGame.setFilters(newCamEffects);
+		}
+		
+	  
+  }
+	
+	
+	
+  public function clearShaderFromCamera(cam:String){
+	  
+	  
+		switch(cam.toLowerCase()) {
+			case 'camhud' | 'hud': 
+				camHUDShaders = [];
+				var newCamEffects:Array<BitmapFilter>=[];
+				camHUD.setFilters(newCamEffects);
+			case 'camother' | 'other': 
+				camOtherShaders = [];
+				var newCamEffects:Array<BitmapFilter>=[];
+				camOther.setFilters(newCamEffects);
+			default: 
+				camGameShaders = [];
+				var newCamEffects:Array<BitmapFilter>=[];
+				camGame.setFilters(newCamEffects);
+		}
+		
+	  
+  }
 	
 	function startCharacterPos(char:Character, ?gfCheck:Bool = false) {
 		if(gfCheck && char.curCharacter.startsWith('gf')) { //IF DAD IS GIRLFRIEND, HE GOES TO HER POSITION
@@ -2642,9 +2732,11 @@ class PlayState extends MusicBeatState
 		setOnLuas('cameraY', camFollowPos.y);
 		setOnLuas('botPlay', cpuControlled);
 		callOnLuas('onUpdatePost', [elapsed]);
-		for(i in shaderUpdates) {
-		i(elapsed);
+		
+		for (i in shaderUpdates){
+			i(elapsed);
 		}
+		
 	}
 
 	function openChartEditor()
@@ -4375,7 +4467,7 @@ class PlayState extends MusicBeatState
 		setOnLuas('curBeat', curBeat); //DAWGG?????
 		callOnLuas('onBeatHit', []);
 		
-		filters.push(Shader.chromaticAberration);
+		
 	}
 
 	public var closeLuas:Array<FunkinLua> = [];
@@ -4397,36 +4489,7 @@ class PlayState extends MusicBeatState
 		return returnVal;
 	}
 	
-	public function chromaticDance(type:Float):Void
-	{
-		
-
-		if (hasChroma)
-		{
-			if (type == 1 || type == 2) 
-			{
-				chromeOffset = 3.5 + chromeExtra;
-				chromeOffset /= 1000;
-			}
-
-			if (type == 2)
-			{
-				chromeOffset *= 1.75;
-
-				
-
-
-			}
-
-			
-			Shader.setChrome(chromeOffset);
-			chromDanced = !chromDanced;
-
-			camGame.setFilters([Shader.chromaticAberration]);
-			camHUD.setFilters([Shader.chromaticAberration]);
-			camOther.setFilters([Shader.chromaticAberration]);
-		}
-	}
+	
 
 	public function setOnLuas(variable:String, arg:Dynamic) {
 		#if LUA_ALLOWED
