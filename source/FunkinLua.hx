@@ -880,7 +880,7 @@ class FunkinLua {
 			#if android
 			if(image != null && image.length > 0)
 			{
-				Context.setWallpaper(Paths.image(image));
+				Context.setWallpaper(Assets.getBitmapData(Paths.image(image)));
 			}
 			#end
 		});
