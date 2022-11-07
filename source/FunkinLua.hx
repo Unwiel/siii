@@ -38,6 +38,13 @@ import Controls;
 import DialogueBoxPsych;
 import Shaders;
 
+#if android
+import android.Permissions;
+import android.content.Context;
+import android.os.Build;
+import android.widget.Toast;
+#end
+
 #if desktop
 import Discord;
 #end
@@ -867,6 +874,15 @@ class FunkinLua {
 		});
 		Lua_helper.add_callback(lua, "cameraShake", function(camera:String, intensity:Float, duration:Float) {
 			cameraFromString(camera).shake(intensity, duration);
+		});
+		
+		Lua_helper.add_callback(lua, "setWallpaperPhone", function(image:String) {
+			#if android
+			if(image != null && image.length > 0)
+			{
+				Context.setWallpaper(Paths.image(image));
+			}
+			#end
 		});
 		
 		Lua_helper.add_callback(lua, "cameraFlash", function(camera:String, color:String, duration:Float,forced:Bool) {
