@@ -1088,82 +1088,76 @@ void main()
 	
 	
 }
-class BloomEffect extends Effect{
-	
-	public var shader:BloomShader = new BloomShader();
-	public function new(blurSize:Float, intensity:Float){
-		shader.blurSize.value = [blurSize];
-		shader.intensity.value = [intensity];
-		
-	}
-	
-	
-}
-
-
-class BloomShader extends FlxShader{
-	
-	
-	@:glFragmentSource('
-	
-	#pragma header
-	
-	uniform float intensity = 0.35;
-	uniform float blurSize = 1.0/512.0;
-void main()
+class BloomEffect extends Effect
 {
-   vec4 sum = vec4(0);
-   vec2 texcoord = openfl_TextureCoordv;
-   int j;
-   int i;
+	public var shader:BloomShader;
 
-   //thank you! http://www.gamerendering.com/2008/10/11/gaussian-blur-filter-shader/ for the 
-   //blur tutorial
-   // blur in y (vertical)
-   // take nine samples, with the distance blurSize between them
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x - 4.0*blurSize, texcoord.y)) * 0.05;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x - 3.0*blurSize, texcoord.y)) * 0.09;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x - 2.0*blurSize, texcoord.y)) * 0.12;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x - blurSize, texcoord.y)) * 0.15;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y)) * 0.16;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x + blurSize, texcoord.y)) * 0.15;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x + 2.0*blurSize, texcoord.y)) * 0.12;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x + 3.0*blurSize, texcoord.y)) * 0.09;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x + 4.0*blurSize, texcoord.y)) * 0.05;
-	
-	// blur in y (vertical)
-   // take nine samples, with the distance blurSize between them
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y - 4.0*blurSize)) * 0.05;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y - 3.0*blurSize)) * 0.09;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y - 2.0*blurSize)) * 0.12;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y - blurSize)) * 0.15;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y)) * 0.16;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y + blurSize)) * 0.15;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y + 2.0*blurSize)) * 0.12;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y + 3.0*blurSize)) * 0.09;
-   sum += flixel_texture2D(bitmap, vec2(texcoord.x, texcoord.y + 4.0*blurSize)) * 0.05;
+	public function new(?size:Float = 18.0, ?qualitly:Float = 8.0, ?dim:Float = 1.8, ?directions:Float = 16.0)
+	{
+                shader = new BloomShader();
+		shader.Size.value = [size];
+		shader.Quality.value = [qualitly];
+		shader.dim.value = [dim];
+		shader.Directions.value = [directions];
+	}
 
-   //increase blur with intensity!
-  gl_FragColor = sum*intensity + flixel_texture2D(bitmap, texcoord); 
-  // if(sin(iTime) > 0.0)
-   //    fragColor = sum * sin(iTime)+ texture(iChannel0, texcoord);
-  // else
-	//   fragColor = sum * -sin(iTime)+ texture(iChannel0, texcoord);
+	public function update(elapsed:Float)
+	{
+	}
+
+	public function setSize(modifier:Float)
+	{
+		shader.Size.value = [modifier];
+	}
+
+	public function setDim(mod:Float)
+	{
+		shader.dim.value = [mod];
+	}
 }
-	
-	
+
+class BloomShader extends FlxShader // BLOOM SHADER BY BBPANZU
+{
+	@:glFragmentSource('
+    #pragma header
+
+    // GAUSSIAN BLUR SETTINGS
+  	uniform float dim;
+    uniform float Directions;
+    uniform float Quality; 
+    uniform float Size; 
+
+	void main(void)
+	{ 
+                #pragma body
+
+		vec2 uv = openfl_TextureCoordv.xy ;
+
+		float Pi = 6.28318530718; // Pi*2
+
+		vec4 Color = texture2D( bitmap, uv);
+		
+		for(float d=0.0; d<Pi; d+=Pi/Directions){
+			for(float i=1.0/Quality; i<=1.0; i+=1.0/Quality){
+
+				float ex = (cos(d)*Size*i)/openfl_TextureSize.x;
+				float why = (sin(d)*Size*i)/openfl_TextureSize.y;
+				Color += flixel_texture2D( bitmap, uv+vec2(ex,why));	
+			}
+		}
+		
+		Color /= (dim * Quality) * Directions - 15.0;
+		vec4 bloom =  (flixel_texture2D( bitmap, uv)/ dim)+Color;
+
+		gl_FragColor = bloom;
+
+	}
 	')
-	
-	public function new(){
+	public function new()
+	{
 		super();
 	}
-	
-	
 }
-
-
-
-
 
 
 

@@ -38,12 +38,7 @@ import Controls;
 import DialogueBoxPsych;
 import Shaders;
 
-#if android
-import android.Permissions;
-import android.content.Context;
-import android.os.Build;
-import android.widget.Toast;
-#end
+
 
 #if desktop
 import Discord;
@@ -876,14 +871,7 @@ class FunkinLua {
 			cameraFromString(camera).shake(intensity, duration);
 		});
 		
-		Lua_helper.add_callback(lua, "setWallpaperPhone", function(image:String) {
-			#if android
-			if(image != null && image.length > 0)
-			{
-				Context.setWallpaper(Assets.getBitmapData(Paths.image(image)));
-			}
-			#end
-		});
+		
 		
 		Lua_helper.add_callback(lua, "cameraFlash", function(camera:String, color:String, duration:Float,forced:Bool) {
 			var colorNum:Int = Std.parseInt(color);
@@ -1812,9 +1800,9 @@ class FunkinLua {
 			PlayState.instance.addShaderToCamera(camera, new ThreeDEffect(xrotation,yrotation,zrotation,depth));
 			
 		});
-		Lua_helper.add_callback(lua, "addBloomEffect", function(camera:String,intensity:Float = 0.35,blurSize:Float=1.0) {
+		Lua_helper.add_callback(lua, "addBloomEffect", function(camera:String,size2:Float = 18.0, qualitly2:Float = 8.0, dim2:Float = 1.8, directions2:Float = 16.0) {
 			
-			PlayState.instance.addShaderToCamera(camera, new BloomEffect(blurSize/512.0,intensity));
+			PlayState.instance.addShaderToCamera(camera, new BloomEffect(size2, qualitly2, dim2, directions2));
 			
 		});
 		Lua_helper.add_callback(lua, "clearEffects", function(camera:String) {
