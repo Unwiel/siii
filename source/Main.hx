@@ -73,19 +73,13 @@ class Main extends Sprite
 		}
 
 		SUtil.check();
-
-		#if !debug
-		initialState = TitleState;
-		#end
 	
 		ClientPrefs.loadDefaultKeys();
-		// fuck you, persistent caching stays ON during sex
-		FlxGraphic.defaultPersist = true;
-		// the reason for this is we're going to be handling our own cache smartly
-		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
-
-		gjToastManager = new GameJoltToastManager();
-		addChild(gjToastManager);
+		#if (flixel >= "5.0.0")
+		addChild(new FlxGame(1280, 720, TitleState, framerate, framerate, true));
+		#else
+		addChild(new FlxGame(1280, 720, TitleState, 1, framerate, framerate, true));
+		#end
 
 		fpsVar = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsVar);
@@ -95,13 +89,16 @@ class Main extends Sprite
 			fpsVar.visible = ClientPrefs.showFPS;
 		}
 
+                gjToastManager = new GameJoltToastManager();
+		addChild(gjToastManager);
+
+
 		#if html5
 		FlxG.autoPause = false;
 		FlxG.mouse.visible = false;
 		#end
-             
-                //Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
-	}
 
+		
+	}
         
 }
