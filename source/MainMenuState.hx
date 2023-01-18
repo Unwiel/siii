@@ -124,10 +124,10 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(-12, FlxG.height - 64, FlxG.width, "Vs Saw v" + vsSawVersion, 12);
+		var versionShit:FlxText = new FlxText(-12, FlxG.height - 64, FlxG.width, "Lmao v" + vsSawVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
+		//add(versionShit);
 
 		var versionShit:FlxText = new FlxText(-12, FlxG.height - 44, FlxG.width, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
