@@ -1479,9 +1479,9 @@ class PlayState extends MusicBeatState
 			(new FlxVideo(fileName)).finishCallback = function()
 			{
 				remove(bg);
-				finishCallback();
+				
 				startAndEnd();
-			   
+			    return;
 			}
 			return;
 		}
