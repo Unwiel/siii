@@ -49,14 +49,21 @@ jobs:
           haxelib --quiet install hxp
           haxelib --quiet install lime 7.9.0
           haxelib --quiet install openfl 9.1.0
-          haxelib --quiet install flixel
-          haxelib --quiet install flixel-addons
-          haxelib --quiet install flixel-ui
-          haxelib --quiet install polymod
-          haxelib --quiet install hscript
-          haxelib --quiet git linc_luajit https://github.com/MAJigsaw77/linc_luajit.git --quiet
-          haxelib --quiet git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools.git
-          haxelib --quiet git hxCodec https://github.com/polybiusproxy/hxCodec.git
+          haxelib --quiet install flixel 4.11.0
+          haxelib run lime setup flixel
+          haxelib run lime setup
+          haxelib install flixel-tools
+          haxelib --quiet install flixel-addons 2.11.0
+          haxelib --quiet install flixel-ui 2.4.0 
+          haxelib install tjson
+          haxelib install hxjsonast
+          haxelib install hscript
+          haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib install hxcpp-debug-server
+          haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit
+          haxelib install hxCodec 
+          haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools.git
           haxelib list
 
       - name: Configure Android
